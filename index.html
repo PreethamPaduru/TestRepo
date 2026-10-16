@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1e293b;
+        }
+
+        header {
+            background: #123b70;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #123b70, #2477bd);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            margin-bottom: 28px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ffffff;
+            color: #123b70;
+            padding: 13px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .services {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #0000000d;
+        }
+
+        .card h3 {
+            margin: 12px 0;
+            color: #123b70;
+        }
+
+        .card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #123b70;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h2 {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bank System</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h2>Welcome to Bank System</h2>
+            <p>
+                A simple banking website for exploring banking services
+                and managing your financial activities securely.
+            </p>
+            <a href="#services" class="button">Explore Services</a>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div>💳</div>
+                    <h3>Account Management</h3>
+                    <p>View information about banking accounts.</p>
+                </article>
+
+                <article class="card">
+                    <div>💰</div>
+                    <h3>Deposits</h3>
+                    <p>Learn about depositing money into an account.</p>
+                </article>
+
+                <article class="card">
+                    <div>🏦</div>
+                    <h3>Withdrawals</h3>
+                    <p>Explore withdrawal services and banking facilities.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="services" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bank System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
